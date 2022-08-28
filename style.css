@@ -1038,8 +1038,15 @@ header {
   opacity: 1;
 }
 footer {
-  padding: 2em 1em;
-  background-color: whitesmoke;
+  padding: 3em 4em;
+  background-color: #141414;
+  color: white;
+}
+footer a {
+  color: var(--the-green) !important;
+}
+footer a:visited {
+  color: var(--darker-green) !important;
 }
 /* area above the HEADER for opening hours etc. Custom widget wordpress */
 .opening-times {
@@ -1114,7 +1121,6 @@ footer {
   padding: 2em;
   background-color: #181818;
   color: white;
-  border-left: 9px solid #ee1b34;
   border-bottom: 1px solid #414141;
 }
 .news h2 {
@@ -1128,10 +1134,11 @@ footer {
   width: 80% !important;
   margin: auto !important;
 }
+
 .main-form-wrapper {
   width: 100%;
   background-color: var(--dark-color);
-  padding: 2em;
+  padding: 3em 2rem;
   color: white;
   scroll-margin-top: 10rem;
   display: flex;
@@ -1172,7 +1179,7 @@ footer {
 .opening-hours-table {
   width: 100% !important;
   margin: 1em;
-  padding: 2rem;
+  padding: 3rem 2rem;
   background: var(--dark-color);
 }
 .opening-hours-table * {
@@ -1184,4 +1191,24 @@ footer {
   text-align: right;
   height: 550px;
   width: 100%;
+}
+.basic-info-widget {
+  width: 70%;
+  margin: 3rem auto !important;
+}
+.basic-info-widget img {
+  margin: 2rem 0;
+}
+.basic-info-widget p {
+  margin: 1rem 0;
+}
+.single-post .post header,
+.page .homepage-wrapper header {
+  flex-direction: column;
+  width: 100%;
+}
+.single-post .post footer {
+  background-color: transparent;
+  color: black;
+  display: none;
 }

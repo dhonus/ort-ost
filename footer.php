@@ -11,21 +11,21 @@
  */
 
 ?>
-
 <footer id="colophon" class="site-footer">
     <div class="site-info">
-        <?php echo date("Y"); ?> © G A Dent s.r.o<br>
-        <a href="<?php echo esc_url(__('https://wordpress.org/', 'ortodoncieostrava')); ?>">
-            <?php
-			/* translators: %s: CMS name, i.e. WordPress. */
-			printf(esc_html__('Proudly powered by %s', 'ortodoncieostrava'), 'WordPress');
-			?>
-        </a>
-        <span class="sep"> | </span>
-        <?php
-		/* translators: 1: Theme name, 2: Theme author. */
-		printf(esc_html__('Theme: %1$s by %2$s.', 'ortodoncieostrava'), 'ortodoncieostrava', '<a href="http://underscores.me/">Underscores.me</a>');
-		?>
+        <div style="display:flex; flex-direction:row; flex:1;">
+            <div style="width:100%;">
+                <?php echo date("Y"); ?> © G A Dent s.r.o <a
+                    href="https://www.ortodoncieostrava.cz">www.ortodoncieostrava.cz</a><br>
+                Tyršova 1832/9, 702 00 Moravská Ostrava
+            </div>
+            <div style="display:flex; flex-direction:column; ">
+                <a class="to-the-top" href="#top">
+                    <span class="to-the-top-long">
+                        Nahoru&nbsp;<span class="arrow" aria-hidden="true">↑</span> </span><!-- .to-the-top-long -->
+                </a>
+            </div>
+        </div>
     </div><!-- .site-info -->
 </footer><!-- #colophon -->
 </div><!-- #page -->
