@@ -1,5 +1,7 @@
 === ortodoncieOstrava ===
 
+A theme for www.ortodoncieostrava.cz
+
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
