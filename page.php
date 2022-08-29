@@ -12,7 +12,6 @@
  *
  * @package ortodoncieOstrava
  */
-
 get_header();
 ?>
 

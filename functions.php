@@ -149,6 +149,7 @@ function opening_times_widget_init()
 		'after_title' => '</h2>',
 	));
 }
+
 add_action('widgets_init', 'opening_times_widget_init');
 
 function ordinacni_doba_init()
@@ -162,6 +163,7 @@ function ordinacni_doba_init()
 		'after_title' => '</h2>',
 	));
 }
+
 add_action('widgets_init', 'ordinacni_doba_init');
 
 /**

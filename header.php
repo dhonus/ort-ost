@@ -40,32 +40,32 @@
             <header id=" masthead" class="site-header">
                 <div class=" site-branding">
                     <?php $header_image = get_header_image();
-					if (!empty($header_image)) { ?>
+                    if (!empty($header_image)) { ?>
                     <a href="<?php echo esc_url(home_url('/')); ?>"
                         title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
                         <img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>"
                             height="<?php echo get_custom_header()->height; ?>" alt="" />
                     </a>
                     <?php } // if ( ! empty( $header_image ) ) 
-					?>
+                    ?>
                     <?php
-					the_custom_logo();
-					if (is_front_page() && is_home()) :
-					?>
+                    the_custom_logo();
+                    if (is_front_page() && is_home()) :
+                    ?>
                     <!--<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
                         rel="home"><?php bloginfo('name'); ?></a></h1>-->
                     <?php
-					else :
-					?>
+                    else :
+                    ?>
                     <p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
                             rel="home"><?php bloginfo('name'); ?></a></p>
                     <?php
-					endif;
-					$ortodoncieostrava_description = get_bloginfo('description', 'display');
-					if ($ortodoncieostrava_description || is_customize_preview()) :
-					?>
+                    endif;
+                    $ortodoncieostrava_description = get_bloginfo('description', 'display');
+                    if ($ortodoncieostrava_description || is_customize_preview()) :
+                    ?>
                     <p class="site-description"><?php echo $ortodoncieostrava_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
-													?></p>
+                                                    ?></p>
                     <?php endif; ?>
                 </div><!-- .site-branding -->
 
@@ -74,13 +74,13 @@
                     <button class="menu-toggle" aria-controls="primary-menu"
                         aria-expanded="false"><?php esc_html_e('Primary Menu', 'ortodoncieostrava'); ?></button>
                     <?php
-					wp_nav_menu(
-						array(
-							'theme_location' => 'menu-1',
-							'menu_id'        => 'primary-menu',
-						)
-					);
-					?>
+                    wp_nav_menu(
+                        array(
+                            'theme_location' => 'menu-1',
+                            'menu_id'        => 'primary-menu',
+                        )
+                    );
+                    ?>
 
                 </nav><!-- #site-navigation -->
                 <a href="/#dotaz" class="appointment">
